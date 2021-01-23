@@ -10,7 +10,6 @@ public class Main {
         int rand;
         String opponentMove;
 
-
         Scanner scanner = new Scanner(System.in);
 
         //Loop through and asking the user to enter a move
