@@ -9,6 +9,11 @@ public class Main {
         String myMove;
         int rand;
         String opponentMove;
+        int userWin = 0;
+        int userLoss = 0;
+
+        int draw = 0;
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -22,7 +27,9 @@ public class Main {
 
             //Check if the user entered quit
             if (myMove.equalsIgnoreCase("quit")){
+                System.out.println("Your Score " +"\n Win "+ userWin +"\nLoss "+ userLoss +"\nTied "+ draw);
                 break;
+
             }
 
             //Verify that myMove is valid
@@ -44,16 +51,18 @@ public class Main {
                 System.out.println("Opponent move: " + opponentMove);
 
                 //Calculate who won or not
-                if (myMove.equals(opponentMove)){
-                    System.out.println("You tied");
+                if (myMove.equalsIgnoreCase(opponentMove)){
+                    draw++;
+                    System.out.println("You tied " + draw);
 
                 }else if((myMove.equalsIgnoreCase("rock") && opponentMove.equalsIgnoreCase("scissors")) ||
                         (myMove.equalsIgnoreCase("scissors") && opponentMove.equalsIgnoreCase("paper")) ||
                         (myMove.equalsIgnoreCase("paper") && opponentMove.equalsIgnoreCase("rock"))) {
-
-                    System.out.println("You won!");
+                    userWin++;
+                    System.out.println("You won! " + userWin + " times");
                 }else {
-                    System.out.println("You lost!");
+                    userLoss++;
+                    System.out.println("You lost! " + userLoss + " times");
 
                 }
             }
