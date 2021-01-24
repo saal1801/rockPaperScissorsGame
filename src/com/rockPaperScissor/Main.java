@@ -1,4 +1,4 @@
-package com.rock.paper.scissor;
+package com.rockPaperScissor;
 
 import java.util.Scanner;
 
@@ -11,7 +11,6 @@ public class Main {
         String opponentMove;
         int userWin = 0;
         int userLoss = 0;
-
         int draw = 0;
 
 
