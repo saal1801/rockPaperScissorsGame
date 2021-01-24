@@ -11,7 +11,7 @@ public class rockPaperScissors {
     private int userLoss = 0;
     private int draw = 0;
 
-    public void rockPaperScissors(){
+    public void rock_Paper_Scissors(){
 
 
 
