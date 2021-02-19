@@ -56,7 +56,8 @@ public class RockScissorsPaperClient extends Thread{
         try(
             Socket socket = new Socket(hotName, portNumber);
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream())))
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))
+        )
 
         {
             BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(System.in));
