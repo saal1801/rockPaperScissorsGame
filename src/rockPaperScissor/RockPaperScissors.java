@@ -2,7 +2,7 @@ package rockPaperScissor;
 
 import java.util.Scanner;
 
-public class rockPaperScissors {
+public class RockPaperScissors {
 
     private String myMove;
     private int rand;
