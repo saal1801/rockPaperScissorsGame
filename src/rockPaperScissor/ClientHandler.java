@@ -52,16 +52,15 @@ public class ClientHandler extends Thread{
 
             //Initial conversation with client
             RockPaperScissors eps = new RockPaperScissors();
-            eps.rock_Paper_Scissors();
-            //outputLine = eps.rock_Paper_Scissors(null); // not done yet
-           // out.println(outputLine);
+            outputLine = eps.rock_Paper_Scissors(null); // not done yet
+            out.println(outputLine);
 
-            /*while ((intputLine = in.readLine() !=null)) { // not done yet
+            while ((intputLine = in.readLine() !=null)) { // not done yet
                 outputLine = eps.rock_Paper_Scissors(intputLine); // not done yet
                 out.println(outputLine);
                 if (outputLine.equalsIgnoreCase("quit"))
                     break;
-            }*/
+            }
         } catch (IOException e) {
             System.out.println("Exception caught when trying to listen on port "
                     + portNumber + " or listening for a connection");
